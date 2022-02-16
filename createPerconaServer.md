@@ -74,6 +74,19 @@ La securització ha sigut feta en un pas anterior, amb els paràmetres ja demana
 2. Quines són les instruccions per arrancar / verificar status / apagar servei de la base de
 dades de Percona Server en el CentOS 7
 
+  2.1 Arrancar Servei
+  
+  ![image](https://user-images.githubusercontent.com/79653853/154350140-e53937a0-9f55-4c61-b245-783edc2cf69c.png)
+  
+  2.2 Verificar Servei
+  
+  ![image](https://user-images.githubusercontent.com/79653853/154350097-50d3f171-afe3-44ea-866a-3f5e491d89a2.png)
+  
+  2.3 Parar Servei
+  
+  ![image](https://user-images.githubusercontent.com/79653853/154350069-65b67d5a-860f-4d8f-8266-85236cc326d1.png)
+
+  
 3. A on es troba i quin nom rep el fitxer de configuració del SGBD Percona Server?
 
 4. A on es troben físicament els fitxers de dades (per defecte). Com ho has sabut?
