@@ -41,3 +41,9 @@ En aquest apartat crearem el nostre MongoDB Server dins d'una màquina CentOS 7.
 7. Farem iniciar el servei en l'arrencada del SO
 
   ![image](https://user-images.githubusercontent.com/79653853/154336944-64b7937c-ab1d-4168-9025-4b30977aa333.png)
+
+
+## TODO
+1. Secure MongoDB
+2. Create User
+3. Allow MongoDB Firewall
