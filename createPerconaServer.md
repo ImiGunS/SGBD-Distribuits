@@ -89,17 +89,34 @@ dades de Percona Server en el CentOS 7
   
 3. A on es troba i quin nom rep el fitxer de configuració del SGBD Percona Server?
 
+Aquest fitxer es troba a `/etc` i rep el nom de `my.cnf`
+
 4. A on es troben físicament els fitxers de dades (per defecte). Com ho has sabut?
+
+Si ens fixem en l'arxiu de configuració, podem veure que aquests fitxers es desen a `/var/lib/mysql`
+
+![image](https://user-images.githubusercontent.com/79653853/154870284-fde22bcb-7447-49b0-9a17-14e729c081f8.png)
+
 
 5. Crea un usuari anomenat asix en el sistema operatiu i en SGBD de tal manera que aquest
 usuari del sistema operatiu no hagi d'introduir l'usuari i password cada vegada que cridem
 al client mysql?
-i. https://dev.mysql.com/doc/refman/8.0/en/password-security-user.html
-ii. Usuari SO-→ asix / patata
-iii. Usuari MySQL → asix / patata
+  5.1 https://dev.mysql.com/doc/refman/8.0/en/password-security-user.html
+  5.2 Usuari SO-→ asix / patata
+    sudo useradd asix
+    sudo passwd asix
+  5.3 Usuari MySQL → asix / patata
+    Escriure les següents linies al `my.conf`
+  ![image](https://user-images.githubusercontent.com/79653853/154870812-4dc7439d-c0fd-4d98-8cc9-7c98145a45c1.png)
+    Fer restart del servei
+
 
 6. El servei de MySQL (mysqld) escolta al port 3306. Quina modificació/passos caldrien fer
 per canviar aquest port a 33306 per exemple?
+
+  6.1 Anar al fitxer de configuració `my.cnf` 
+  6.2 Afegir les linies `port=33306`
+  6.3 Fer restart del servei `sudo systemctl restart mysql`
 
 7. Important: No realitzis els canvis. Només indica els passos que faries.
 
