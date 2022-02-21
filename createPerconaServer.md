@@ -67,31 +67,31 @@ En aquest apartat crearem el nostre Percona Server dins d'una màquina CentOS 7.
 
 1. Un cop realitzada la instal·lació realitza una securització de la mateixa. Quin programa
 realitza aquesta tasca? Realitza una securització de la instal·lació indicant que la
-contrasenya de root sigui patata.
+contrasenya de root sigui patata. <br>
 
 La securització ha sigut feta en un pas anterior, amb els paràmetres ja demanats
 
 2. Quines són les instruccions per arrancar / verificar status / apagar servei de la base de
-dades de Percona Server en el CentOS 7
+dades de Percona Server en el CentOS 7 <br>
 
-  2.1 Arrancar Servei
+  2.1 Arrancar Servei <br>
   
   ![image](https://user-images.githubusercontent.com/79653853/154350140-e53937a0-9f55-4c61-b245-783edc2cf69c.png)
   
-  2.2 Verificar Servei
+  2.2 Verificar Servei <br>
   
   ![image](https://user-images.githubusercontent.com/79653853/154350097-50d3f171-afe3-44ea-866a-3f5e491d89a2.png)
   
-  2.3 Parar Servei
+  2.3 Parar Servei <br>
   
   ![image](https://user-images.githubusercontent.com/79653853/154350069-65b67d5a-860f-4d8f-8266-85236cc326d1.png)
 
   
-3. A on es troba i quin nom rep el fitxer de configuració del SGBD Percona Server?
+3. A on es troba i quin nom rep el fitxer de configuració del SGBD Percona Server? <br>
 
 Aquest fitxer es troba a `/etc` i rep el nom de `my.cnf`
 
-4. A on es troben físicament els fitxers de dades (per defecte). Com ho has sabut?
+4. A on es troben físicament els fitxers de dades (per defecte). Com ho has sabut? <br>
 
 Si ens fixem en l'arxiu de configuració, podem veure que aquests fitxers es desen a `/var/lib/mysql`
 
@@ -100,27 +100,27 @@ Si ens fixem en l'arxiu de configuració, podem veure que aquests fitxers es des
 
 5. Crea un usuari anomenat asix en el sistema operatiu i en SGBD de tal manera que aquest
 usuari del sistema operatiu no hagi d'introduir l'usuari i password cada vegada que cridem
-al client mysql?
-  5.1 https://dev.mysql.com/doc/refman/8.0/en/password-security-user.html
-  5.2 Usuari SO-→ asix / patata
+al client mysql? <br>
+  5.1 https://dev.mysql.com/doc/refman/8.0/en/password-security-user.html <br>
+  5.2 Usuari SO-→ asix / patata <br>
     sudo useradd asix
     sudo passwd asix
-  5.3 Usuari MySQL → asix / patata
+  5.3 Usuari MySQL → asix / patata <br>
     Escriure les següents linies al `my.conf`
   ![image](https://user-images.githubusercontent.com/79653853/154870812-4dc7439d-c0fd-4d98-8cc9-7c98145a45c1.png)
     Fer restart del servei
 
 
 6. El servei de MySQL (mysqld) escolta al port 3306. Quina modificació/passos caldrien fer
-per canviar aquest port a 33306 per exemple?
+per canviar aquest port a 33306 per exemple? <br>
 
-  6.1 Anar al fitxer de configuració `my.cnf` 
-  6.2 Afegir les linies `port=33306`
-  6.3 Fer restart del servei `sudo systemctl restart mysql`
+  6.1 Anar al fitxer de configuració `my.cnf` <br>
+  6.2 Afegir les linies `port=33306` <br>
+  6.3 Fer restart del servei `sudo systemctl restart mysql` <br>
 
-7. Important: No realitzis els canvis. Només indica els passos que faries.
+7. Important: No realitzis els canvis. Només indica els passos que faries. <br>
 
-8. Ensenya al professor que us podeu connectar al SGBD.
+8. Ensenya al professor que us podeu connectar al SGBD. <br>
 
 
 
