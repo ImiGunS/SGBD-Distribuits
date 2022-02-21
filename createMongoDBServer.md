@@ -41,9 +41,29 @@ En aquest apartat crearem el nostre MongoDB Server dins d'una màquina CentOS 7.
 7. Farem iniciar el servei en l'arrencada del SO
 
   ![image](https://user-images.githubusercontent.com/79653853/154336944-64b7937c-ab1d-4168-9025-4b30977aa333.png)
+ 
+8. Securitzarem el nostre MongoDB mitjançant una contrasenya.
+  Anirem a /etc/mongod.conf i buscarem la directiva `security`.
+  
+  ![image](https://user-images.githubusercontent.com/79653853/154883610-e5819a20-7586-4dbe-9269-fdbe42e6ab20.png)
+  
+9. Reiniciar servei
+
+  ![image](https://user-images.githubusercontent.com/79653853/154883848-756a14cb-4a98-4f65-b280-2739ea112b0a.png)
+
+10. Creació usuari
+  10.1 Accedim al SGBD mitjançant la comanda `mongo`
+  10.2 Crearem l'usuari `asix` i donarem els permissos necessaris
+  
+  ![image](https://user-images.githubusercontent.com/79653853/154884158-f5c74155-057f-49c7-96a4-94c01e0c8dc3.png)
+  
+  10.3 Accedim amb l'usuari
+
+  ![image](https://user-images.githubusercontent.com/79653853/154884261-cd26ca7b-f0f5-48f8-a34a-811f6fd5034f.png)
+
+11. Configuració Firewall
+  
+  ![image](https://user-images.githubusercontent.com/79653853/154884417-63592d0b-c436-4fcf-be56-282279f8049f.png)
 
 
-## TODO
-1. Secure MongoDB
-2. Create User
-3. Allow MongoDB Firewall
+Finalment, tenim al nostre SGBD MongoDB instal·lat i securitzat.
