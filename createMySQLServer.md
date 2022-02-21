@@ -19,3 +19,23 @@ En aquest apartat crearem el nostre MySQL Server dins d'una màquina CentOS 7.
 5. Instal·lar MySQL 8.0
 
   ![image](https://user-images.githubusercontent.com/79653853/154885705-db3cc3c4-3c8a-4aae-ad86-37ef89230aac.png)
+  
+  
+# PREGUNTES
+
+1. A on es troben físicament els fitxers de dades?  <br>
+  `/var/lib/mysql`
+2. A on es troba el fitxer de configuració? Quin és el seu contingut? <br>
+  Es troba a `/etc/mysql`
+3. El procés de mysqld escolta al port 3306. Quina modificació/passos caldrien fer per canviar aquest port a 33306 per exemple? Important: No realitzis els canvis. Només indica els passos que faries. <br>
+  Anar al fitxer de configuració my.cnf 6.2 Afegir les linies port=33306 6.3 Fer restart del servei sudo systemctl restart mysql
+4. Un cop finalitzada la instal·lació i veure que funciona, mostra el resultat de la comanda: <br>
+5. ps -ef | grep mysql <br>
+6. Quines són les característiques principals que ofereix MySQL 8.0 enfront de la 5.7. <br>
+  La versió 8.0 ofereix les CTE (Common Table Expressions), regexp, windows functions, invisible indexes, unicode suport i noves mesures de seguretat
+8. Ensenya al professor que us podeu connectar al SGBD. <br>
+
+## TODO
+  
+  Secure installation
+  
